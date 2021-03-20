@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class articlescreen extends StatefulWidget {
-  articlescreen({Key key}) : super(key: key);
+class Articlescreen extends StatefulWidget {
+  Articlescreen({Key key}) : super(key: key);
 
   @override
-  _articlescreenState createState() => _articlescreenState();
+  _ArticlescreenState createState() => _ArticlescreenState();
 }
 
-class _articlescreenState extends State<articlescreen> {
+class _ArticlescreenState extends State<Articlescreen> {
   @override
   Widget build(BuildContext context) {
     return Container(

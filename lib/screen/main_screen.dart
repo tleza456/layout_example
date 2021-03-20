@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_example/page.dart';
 
 class Mainscreen extends StatefulWidget {
   Mainscreen({Key key}) : super(key: key);
@@ -8,6 +9,17 @@ class Mainscreen extends StatefulWidget {
 }
 
 class _MainscreenState extends State<Mainscreen> {
+int currentIndex = 0;
+
+void onIndexChange(int index) {
+  setState(() {
+      currentIndex = index;
+    });
+}
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +62,9 @@ class _MainscreenState extends State<Mainscreen> {
               title: Text("Picture"),
             ),
                ListTile(
+                 onTap: (){
+                   Navigator.pushNamed(context, '/history');
+                 },
               leading: Icon(Icons.account_balance_sharp),
               title: Text("History"),
             )
@@ -57,8 +72,22 @@ class _MainscreenState extends State<Mainscreen> {
         ),
       ),
       appBar: AppBar(
-        title: Text("App Wat"),
+        title: Text(pages[currentIndex].title,),
       ),
+      body: pages[currentIndex].page,
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: onIndexChange,
+        items: pages
+        .map(
+          (item) => BottomNavigationBarItem(
+            icon: item.icon,
+            label: item.label,
+          ),
+        )
+        .toList(),
+    ),
     );
+    
   }
 }
