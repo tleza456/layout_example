@@ -67,7 +67,14 @@ void onIndexChange(int index) {
                  },
               leading: Icon(Icons.account_balance_sharp),
               title: Text("History"),
-            )
+            ),
+             ListTile(
+                 onTap: (){
+                   Navigator.pushNamed(context, '/credit');
+                 },
+              leading: Icon(Icons.account_balance_sharp),
+              title: Text("Credit"),
+            ),
           ],
         ),
       ),

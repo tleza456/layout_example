@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layout_example/screen/activity_screen.dart';
 import 'package:layout_example/screen/article_screen.dart';
+import 'package:layout_example/screen/credit_screen.dart';
 import 'package:layout_example/screen/home_screen.dart';
 
 class Page {
@@ -30,6 +31,12 @@ List<Page> pages = [
   label: "activity",
   page: activityscreen(), 
   title: "กิจกรรม",
+  ),
+    Page(
+    icon: Icon(Icons.home),
+  label: "credit",
+  page: Creditscreen(), 
+  title: "เครดิต",
   ),
 ];
 
