@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 
-class mainscreen extends StatefulWidget {
-  mainscreen({Key key}) : super(key: key);
+class Mainscreen extends StatefulWidget {
+  Mainscreen({Key key}) : super(key: key);
 
   @override
-  _mainscreenState createState() => _mainscreenState();
+  _MainscreenState createState() => _MainscreenState();
 }
 
-class _mainscreenState extends State<mainscreen> {
+class _MainscreenState extends State<Mainscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("App Wat"),),
+      appBar: AppBar(
+        title: Text("App Wat"),
+        ),
     );
   }
 }
