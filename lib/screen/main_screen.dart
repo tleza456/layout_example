@@ -11,7 +11,7 @@ class _mainscreenState extends State<mainscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: ,),
+      appBar: AppBar(title: Text("App Wat"),),
     );
   }
 }
