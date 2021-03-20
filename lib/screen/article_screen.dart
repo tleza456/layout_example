@@ -11,7 +11,7 @@ class _articlescreenState extends State<articlescreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-       child: Center(child: Text("article screen"),),
+       child: Center(child: Text("Article Screen"),),
     );
   }
 }

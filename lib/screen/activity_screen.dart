@@ -11,7 +11,7 @@ class _activityscreenState extends State<activityscreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-       child: Center(child: Text("activity screen"),),
+       child: Center(child: Text("Activity Screen"),),
     );
   }
 }
